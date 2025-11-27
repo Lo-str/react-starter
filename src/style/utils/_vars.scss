@@ -66,7 +66,7 @@ $sp_48: 4.8rem;  // 48px
 $sp_49: 4.9rem;  // 49px
 $sp_50: 5.0rem;  // 50px
 $sp_960: 96rem; // 960px
-
+$sp_1200: 120rem; // 1200px
 // ------------------------------------------------------
 // Radius
 // ------------------------------------------------------
@@ -80,68 +80,10 @@ $rd_16: 1.6rem; // 16px
 $rd_round: 999rem; // pill / circle
 
 // ------------------------------------------------------
-// Flex
-// ------------------------------------------------------
-
-
-// Basic flex row
-@mixin flex-row($align: center, $justify: flex-start, $gap: null) {
-  display: flex;
-  flex-direction: row;
-  align-items: $align;
-  justify-content: $justify;
-
-  @if $gap != null {
-    gap: $gap;
-  }
-}
-
-// Center both ways (row)
-@mixin flex-center($gap: null) {
-  @include flex-row(center, center, $gap);
-}
-
-// Column flex
-@mixin flex-column($align: stretch, $justify: flex-start, $gap: null) {
-  display: flex;
-  flex-direction: column;
-  align-items: $align;
-  justify-content: $justify;
-
-  @if $gap != null {
-    gap: $gap;
-  }
-}
-
-// ------------------------------------------------------
-// Interactive
-// ------------------------------------------------------
-
-@mixin clickable {
-  cursor: pointer;
-  user-select: none;
-  transition:
-    background-color 150ms ease,
-    color 150ms ease,
-    box-shadow 150ms ease,
-    transform 80ms ease;
-
-  &:hover {
-    transform: translateY(-0.1rem);
-    box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.35);
-  }
-
-  &:active {
-    transform: translateY(0);
-    box-shadow: none;
-  }
-}
-
-// ------------------------------------------------------
 // Colors
 // ------------------------------------------------------
 
-$clr-bg: #0f172a;
+$clr-bg: rgb(48, 13, 104);
 $clr-border: red;
 $clr-txt: #e5e7eb;
 $clr-1: white;
@@ -159,7 +101,7 @@ $clr-9: white;
 // ------------------------------------------------------
 
 $ft-main: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-$ft-heading: ;
+// $ft-heading: ;
 
 // ------------------------------------------------------
 // Shadows

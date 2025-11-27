@@ -3,17 +3,3 @@
 @use "./utils/mixins" as m;
 
 // Typography
-h1,
-h2,
-h3,
-h4 {
-  font-family: $font-heading;
-  color: $color-accent-soft;
-  margin: 0 0 $space-sm;
-}
-
-p {
-  margin: 0 0 $space-sm;
-  line-height: 1.5;
-  color: $color-text;
-}
