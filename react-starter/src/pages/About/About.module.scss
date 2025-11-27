@@ -1,0 +1,17 @@
+// Tools
+@use "../../style/utils/vars" as v;
+@use "../../style/utils/mixins" as m;
+
+.body {
+  @include m.flex(column);
+}
+
+.main {
+  border: 2px solid red;
+  @include m.flex(space-around);
+  max-width: v.$sp_1200;
+  width: 100%;
+  min-height: 100vh;
+  margin: v.$sp_30;
+}
+
