@@ -1,11 +1,11 @@
-import styles from './Header.module.scss';
+import styles from './Header.module.scss'
 
 function Header() {
   return (
-    <header className={styles.header}>
+    <div>
 
-    </header>
+    </div>
   );
 }
 
-export default Header;
+export default Header

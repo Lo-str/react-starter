@@ -1,0 +1,33 @@
+// Tools
+@use "./utils/vars" as v;
+@use "./utils/mixins" as m;
+
+// App.jsx Layout
+.app {
+  min-height: 100vh;
+  @include m.flex(column, none, center, v.$sp-10);
+  background-color: v.$clr-bg;
+  padding: v.$sp-10;
+
+
+  &__wrap {
+    max-width: v.$sp_1024;
+    margin: 0 auto;
+    padding: v.$sp-10;
+
+
+  &__header {
+    @include m.flex(row, space-between, flex-start, v.$sp-10);
+    justify-content: space-between;
+    padding: v.$sp-10;
+  }
+
+  &__main {
+
+  }
+
+  &__footer {
+    padding: v.$sp-10;
+  }
+  }
+}
